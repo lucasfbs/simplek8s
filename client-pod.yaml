@@ -3,10 +3,10 @@ kind: Pod
 metadata:
     name: client-pod
     labels:
-      compoment: web
+      component: web
 spec:
   containers:
     - name: client
-      image: lfbds/multi-client
+      image: lfbds/multi-worker
       ports:
-        - containerPort: 3000
+        - containerPort: 9999
